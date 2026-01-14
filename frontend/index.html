@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech to Text Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Live capture</p>
+        <h1>Speech to Text Studio</h1>
+        <p class="subhead">
+          Record audio in the browser, send it to your backend, and get a transcript in seconds.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="controls">
+          <button id="startBtn" class="primary">Start recording</button>
+          <button id="stopBtn" class="ghost" disabled>Stop</button>
+          <button id="transcribeBtn" class="ghost" disabled>Transcribe</button>
+        </div>
+
+        <div class="status" id="status">Ready to record.</div>
+
+        <div class="playback">
+          <audio id="playback" controls></audio>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Transcript</h2>
+        <div id="transcript" class="transcript">Your transcript will appear here.</div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

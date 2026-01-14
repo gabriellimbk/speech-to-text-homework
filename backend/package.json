@@ -1,0 +1,13 @@
+{
+  "name": "speech-to-text-backend",
+  "version": "1.0.0",
+  "description": "Simple speech-to-text backend",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
