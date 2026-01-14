@@ -5,7 +5,7 @@ const statusEl = document.getElementById('status');
 const transcriptEl = document.getElementById('transcript');
 const playbackEl = document.getElementById('playback');
 
-const API_BASE = 'https://speech-to-text-homework.onrender.com/';
+const API_BASE = 'https://speech-to-text-homework.onrender.com';
 
 let mediaRecorder;
 let audioChunks = [];
@@ -131,4 +131,5 @@ startBtn.addEventListener('click', () => {
 
 stopBtn.addEventListener('click', stopRecording);
 transcribeBtn.addEventListener('click', transcribeAudio);
+
 
